@@ -25,3 +25,5 @@ See also prior reference:
 * `one_slack_ssvm_hard.py` constains one-slack SSVM learner class for `pystruct` with additional hard constraints <w, a> >= b, either specified or generated with `learner.generate_hard_constraints`
 * `probsub.py` provides an interface to learners with probably submodular constraints, provided by `probsub_helpers.py`
 
+## Project webpage
+Additional information can be found on the project webpage http://homes.esat.kuleuven.be/~mblaschk/projects/learnConstraints/
