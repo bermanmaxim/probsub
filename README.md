@@ -1,12 +1,15 @@
 # Probsub
-Structured SVM with probably submodular constraints
+Structured SVM with probably submodular constraints.
 
 ## Citation
 For use, please cite:
 > Berman, Maxim, & Blaschko, Matthew B. (2016, December). Efficient optimization for probably submodular constraints in CRFs. In Proceedings of the NIPS workshop on constructive machine learning.
 
-See also prior reference:
+See also prior reference on the probably submodular framework
 > Zaremba, Wojciech, & Blaschko, Matthew B. (2016, March). Discriminative training of CRF models with probably submodular constraints. In 2016 IEEE Winter Conference on Applications of Computer Vision (WACV). IEEE.
+
+The package relies on PyStruct
+> Müller, Andreas C., and Sven Behnke. "PyStruct: learning structured prediction in python." Journal of Machine Learning Research 15.1 (2014): 2055-2060.
 
 ## Installation
 * Create environment and install requirements
