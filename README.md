@@ -1,8 +1,6 @@
 # Probsub
 Structured SVM with probably submodular constraints
 
-[![DOI](https://zenodo.org/badge/75273971.svg)](https://zenodo.org/badge/latestdoi/75273971)
-
 ## Citation
 For use, please cite:
 > Berman, Maxim, & Blaschko, Matthew B. (2016, December). Efficient optimization for probably submodular constraints in CRFs. In Proceedings of the NIPS workshop on constructive machine learning.
