@@ -4,7 +4,6 @@ from __future__ import absolute_import, division, print_function  # We require P
 import numpy as np
 from pystruct.learners.one_slack_ssvm import NoConstraint
 import time
-from numba import jit
 from numpy import arange
 
 def get_B(nlabels):
@@ -29,7 +28,6 @@ def get_P_t(X_p):
     P = np.vstack(x_p[2] for x_p in X_p).astype(np.float64)
     return P.transpose()
 
-@jit(nopython=True)
 def sparse_mult(A, B, C, mask) :
     """
     Computes [A * B][mask] and stores the result in C[mask]
@@ -41,11 +39,6 @@ def sparse_mult(A, B, C, mask) :
             if mask[i, j]:
                 C[i, j] = np.dot(A[i, :], B[:, j])
     return C
-
-def sparse_mult_naive(A, B, C, mask) :
-    # Computes the product A*B on mask and stores the result in C
-    for (i, j) in zip(*mask.nonzero()):
-        C[i, j] = np.dot(A[i, :], B[:, j])
 
 def update_L(ssvm, w_pair):
     # compute lower bounds on the violation
